@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { ImageList } from '@mui/material';
 import { BL } from 'components/Hooks'
 import SingleImage from 'components/View/SingleImage'
 import { StyledImageList } from './Style'
 import { texts } from 'utils/Texts';
 
 const AllImages = (props) => {
-    const { data } = BL()
+    const { data, } = BL()
     const text = texts.noImages
+
 
     return (
         <StyledImageList >

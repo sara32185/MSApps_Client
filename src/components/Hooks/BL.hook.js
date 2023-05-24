@@ -49,7 +49,7 @@ const BL = () => {
         disableNext,
         _setOpenModal,
         _setCategory,
-        buttonsStruct
+        buttonsStruct,
     }
 }
 

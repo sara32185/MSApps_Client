@@ -53,6 +53,7 @@ export const sortImagesByKey = ({ dispatch, getState }) => next => action => {
 
     return next(action)
 }
+
 export const getData = ({ dispatch, getState }) => next => action => {
     const CATEGORY = action.payload;
 
