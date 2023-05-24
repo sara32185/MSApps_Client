@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import AllImages from './AllImages'
-import { BL } from '../Hooks'
+import { BL } from 'components/Hooks'
 import { WrapView, WrapViewContent } from './Style'
-import IconButtonElement from '../Elements/IconButtonElement'
-import ButtonElement from '../Elements/ButtonElement'
+import IconButtonElement from 'components/Elements/IconButtonElement'
+import ButtonElement from 'components/Elements/ButtonElement'
 
 const View = (props) => {
 

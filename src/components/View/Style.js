@@ -62,6 +62,9 @@ const StyledImageList = styled(ImageList)`
     max-height:90vh !important;
     height:90vh !important;
     margin:auto !important;
+    .no-image-message{
+      
+    }
 `
 const WrapTextAndInput = styled.div`
      display:grid;

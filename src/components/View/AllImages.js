@@ -1,11 +1,14 @@
 import * as React from 'react';
 import { ImageList } from '@mui/material';
-import { BL } from '../Hooks'
-import SingleImage from './SingleImage'
+import { BL } from 'components/Hooks'
+import SingleImage from 'components/View/SingleImage'
 import { StyledImageList } from './Style'
+import { texts } from 'utils/Texts';
 
 const AllImages = (props) => {
     const { data } = BL()
+    const text = texts.noImages
+
     return (
         <StyledImageList >
             {
@@ -15,7 +18,10 @@ const AllImages = (props) => {
                         <SingleImage key={index} item={item} />
                     )
                     :
-                    <h1>There are no match images for the selected category</h1>
+                    <div className='no-image-message'>
+                        <h1>{text.title}</h1>
+                        <h4>{text.subTilte}</h4>
+                    </div>
             }
         </StyledImageList>
 

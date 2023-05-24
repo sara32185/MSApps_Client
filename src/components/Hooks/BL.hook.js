@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import actions from "../../redux/actions";
-import SelectCategory from '../View/SelectCategory'
-import { icons } from '../../utils/Icons';
+import actions from "redux/actions";
+import SelectCategory from 'components/View/SelectCategory'
+import { icons } from 'utils/Icons';
 
 const BL = () => {
     const data = useSelector(state => state.DataReducer.currentData)

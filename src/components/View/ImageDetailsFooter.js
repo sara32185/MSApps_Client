@@ -5,7 +5,7 @@ import {
     WrapDetail,
     StyledBadge,
 } from './Style'
-import { iconsAndColors } from '../../utils/Icons';
+import { iconsAndColors } from 'utils/Icons';
 
 const ImageDetailsFooter = (props) => {
     const { item } = props
@@ -23,13 +23,12 @@ const ImageDetailsFooter = (props) => {
         <div className='wrap-details'>
             <WrapDetails>
                 {details.map(detail =>
-                    <WrapDetail>
+                    <WrapDetail key={detail}>
                         <div className='wrap-icon'>
                             {returnIcon(detail)}
                         </div>
                         <StyledBadge key={detail} color={iconsAndColors[detail].color} badgeContent={item[detail]} max={999}>
                             <span>{detail}</span>
-
                         </StyledBadge>
                     </WrapDetail>
                 )}

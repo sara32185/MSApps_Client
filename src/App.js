@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import actions from './redux/actions'
+import actions from 'redux/actions'
 import { connect } from 'react-redux';
-import ModalElement from './components/Elements/ModalElement';
-import View from './components/View'
+import ModalElement from 'components/Elements/ModalElement';
+import View from 'components/View'
 
 const App = (props) => {
   const {
@@ -14,13 +14,7 @@ const App = (props) => {
   } = props
 
   useEffect((() => {
-    _getData('CATEGORY')
-  }), [])
-
-
-  useEffect((() => {
     _getData(_category)
-
   }), [_category])
 
   return (

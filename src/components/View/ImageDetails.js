@@ -4,12 +4,10 @@ import {
     WrapImageAndDetails,
     WrapImage
 } from './Style'
-import { icons } from '../../utils/Icons';
-import { ImageListItemBar } from '@mui/material';
 
 const ImageDetails = (props) => {
     const { item } = props,
-        { previewURL, user, id } = item;
+        { previewURL } = item;
 
 
     return (

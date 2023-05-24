@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ImageDetails from './ImageDetails'
-import { BL } from '../Hooks'
+import { BL } from 'components/Hooks'
 import { StyledImageListItem, StyledImageListItemBar } from './Style'
 import ImageDetailsFooter from './ImageDetailsFooter';
 
