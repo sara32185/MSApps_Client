@@ -23,7 +23,6 @@ export const getPaginationData = ({ dispatch, getState }) => next => action => {
                 dispatch(actions.setPage(page))
                 dispatch(actions.setDisableNext(disableNext))
                 dispatch(actions.setDisablePrev(disablePrev))
-                // handle success
             })
             .catch(error => {
                 console.log(error);

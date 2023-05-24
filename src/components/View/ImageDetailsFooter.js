@@ -4,40 +4,35 @@ import {
     WrapDetails,
     WrapDetail,
     StyledBadge,
-    WrapImageAndDetails,
-    WrapImage
 } from './Style'
-import { icons } from '../../utils/Icons';
+import { iconsAndColors } from '../../utils/Icons';
 
 const ImageDetailsFooter = (props) => {
-    const { item } = props,
-        { previewURL, views, downloads, likes, comments } = item;
+    const { item } = props
     const details = [
-        'views', 'downloads', 'likes', 'comments'
+        'views', 'downloads', 'likes', 'comments', 'collections'
     ]
 
     const returnIcon = (name) => {
-        const Icon = icons[name]
+        const Icon = iconsAndColors[name].name
         return <Icon />
     }
 
     return (
 
         <div className='wrap-details'>
-
             <WrapDetails>
                 {details.map(detail =>
                     <WrapDetail>
                         <div className='wrap-icon'>
                             {returnIcon(detail)}
                         </div>
-                        <StyledBadge key={detail} color="secondary" badgeContent={item[detail]} max={999}>
+                        <StyledBadge key={detail} color={iconsAndColors[detail].color} badgeContent={item[detail]} max={999}>
                             <span>{detail}</span>
 
                         </StyledBadge>
                     </WrapDetail>
                 )}
-
             </WrapDetails >
         </div>
 
